@@ -28,6 +28,18 @@
                                     <constraint id="45" firstAttribute="height" constant="300"/>
                                 </constraints>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="204" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="230" y="100" width="116" height="30"/>
+                                <state key="normal" title="First View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="205" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
+                                <rect key="frame" x="230" y="176" width="116" height="30"/>
+                                <state key="normal" title="Second View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint id="42" firstItem="35" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20"/>
@@ -36,11 +48,13 @@
                     </view>
                     <connections>
                         <outlet property="MainContainer" destination="35" id="name-outlet-35"/>
+                        <outlet property="FirstViewButton" destination="204" id="name-outlet-204"/>
+                        <outlet property="SecondViewButton" destination="205" id="name-outlet-205"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-12" y="351"/>
         </scene>
         <scene sceneID="38">
             <objects>
@@ -55,10 +69,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
+                    <connections>
+                        <segue id="158" destination="49" kind="custom" identifier="embedFirst"/>
+                        <segue id="202" destination="56" kind="custom" identifier="embedSecond"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="650" y="100"/>
+            <point key="canvasLocation" x="684" y="561"/>
         </scene>
         <scene sceneID="48">
             <objects>
@@ -75,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1300" y="103"/>
+            <point key="canvasLocation" x="1383" y="101"/>
         </scene>
         <scene sceneID="55">
             <objects>
@@ -92,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="58" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1308" y="789"/>
+            <point key="canvasLocation" x="1383" y="784"/>
         </scene>
     </scenes>
 </document>
