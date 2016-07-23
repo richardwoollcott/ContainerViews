@@ -11,19 +11,11 @@ using UIKit;
 
 namespace ContainerViews
 {
-    [Register ("ViewController")]
-    partial class ViewController
+    [Register ("ContainerViewController")]
+    partial class ContainerViewController
     {
-        [Outlet]
-        [GeneratedCode ("iOS Designer", "1.0")]
-        UIKit.UIView MainContainer { get; set; }
-
         void ReleaseDesignerOutlets ()
         {
-            if (MainContainer != null) {
-                MainContainer.Dispose ();
-                MainContainer = null;
-            }
         }
     }
 }
