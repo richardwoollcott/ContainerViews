@@ -115,10 +115,6 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="ContainerViewController.cs" />
-    <Compile Include="ContainerViewController.designer.cs">
-      <DependentUpon>ContainerViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="FirstViewController.cs" />
     <Compile Include="FirstViewController.designer.cs">
       <DependentUpon>FirstViewController.cs</DependentUpon>

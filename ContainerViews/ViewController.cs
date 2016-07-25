@@ -51,14 +51,14 @@ namespace ContainerViews
 
             FirstViewButton.TouchUpInside += (object sender, EventArgs e) => 
             {
-                //this.PerformSegue("embedFirst", this.MainContainer);
-
                 FirstVC.View.Frame = this.MainContainer.Bounds;
                 FirstVC.WillMoveToParentViewController(this);
                 this.MainContainer.Add(FirstVC.View);
 
                 this.AddChildViewController(FirstVC);
                 FirstVC.DidMoveToParentViewController(this);
+
+                SecondVC.RemoveFromParentViewController();
             };
 
             SecondViewButton.TouchUpInside += (object sender, EventArgs e) =>
@@ -69,6 +69,8 @@ namespace ContainerViews
 
                 this.AddChildViewController(SecondVC);
                 SecondVC.DidMoveToParentViewController(this);
+
+                FirstVC.RemoveFromParentViewController();
             };
         }
 
